@@ -12,6 +12,13 @@ app.use(express.static("public"));
 app.use(apiRoutes);
 app.use(htmlRoutes);
 
+app.get("/", function(req, res) {
+  res.json(path.join(__dirname, "public/index.html"));
+});
+
+app.get("/notes", function(req, res) {
+  res.json(path.join(__dirname, "public/notes.html"));
+});
 
 app.listen(PORT, function() {
     console.log(`App listening on http://localPORT:${PORT}`);
