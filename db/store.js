@@ -14,12 +14,14 @@ const readDb = function (){
 }
 readDb()
 
-const writeNote = function (){
-    return writeFileAsync("./db.json", JSON.stringify(note))
-}
+// const writeNote = function (){
+//     return writeFileAsync("./db.json", JSON.stringify(note)).then(function(res){
+//         console.log(res)
+//     })
+// }
 
-var note = [{
-    
-}]
+// var note = [{
+        
+// }]
 
-writeNote(note)
+// writeNote(note)
