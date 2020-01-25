@@ -7,12 +7,12 @@ const writeFileAsync = util.promisify(fs.writeFile);
 // const id = 0;
 
 const readDb = function (){
-   return readFileAsync("./db.json", "utf8")
+   return readFileAsync("./db/db.json", "utf8")
    .then(function(data){
        console.log(data)
    })
 }
-readDb()
+// readDb()
 
 // const writeNote = function (){
 //     return writeFileAsync("./db.json", JSON.stringify(note)).then(function(res){
@@ -25,3 +25,5 @@ readDb()
 // }]
 
 // writeNote(note)
+
+module.exports = readDb
