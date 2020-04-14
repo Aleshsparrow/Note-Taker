@@ -132,6 +132,7 @@ var getAndRenderNotes = function() {
   });
 };
 
+// Setting up event listeners
 $saveNoteBtn.on("click", handleNoteSave);
 $noteList.on("click", ".list-group-item", handleNoteView);
 $newNoteBtn.on("click", handleNewNoteView);
