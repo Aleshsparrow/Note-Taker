@@ -7,12 +7,12 @@ var largestID = 0;
 
 // Setting up different routes and exporting
 module.exports = function(app){
-
+  // Get route
     app.get("/api/notes", function(req, res) {
       console.log(store)
       res.json(store);
     });
-    
+    // Post route
     app.post("/api/notes", function(req, res) {
        console.log(req.body)
        for(i=0;i<store.length;i++){
@@ -32,7 +32,7 @@ module.exports = function(app){
       })
       
     });
-
+// Delete route
     app.delete("/api/notes", (req, res) => {
       console.log("hitting route")
     })
