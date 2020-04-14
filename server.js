@@ -9,6 +9,7 @@ var htmlRoutes = require("./routes/htmlroutes");
 var app = express();
 var PORT = process.env.PORT || 3000;
 
+// Seeting up express
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
@@ -16,8 +17,6 @@ app.use(express.json());
 app.use(express.static("public"));
 htmlRoutes(app);
 apiRoutes(app);
-
-
 
 // Setting up port for the server
 app.listen(PORT, function() {
