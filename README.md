@@ -8,7 +8,6 @@ Upon clicking the save icon, the note and title is pushed to the back end in for
     I used the "express" npm package to set up my server and then added some routes to render different html pages with different routes.
 
 
-
 ## Built with
 * VScode
 
