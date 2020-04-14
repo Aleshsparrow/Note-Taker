@@ -1,15 +1,15 @@
-// var data = require("../Develop/db")
+// Requiring the important npm package
 var fs = require("fs")
-// var util = require("util");
-// var readFileAsync = util.promisify(fs.readFile)
+// Requiring from the database set up
 var store = require("../db/db.json")
 var largestID = 0;
 
+
+// Setting up different routes and exporting
 module.exports = function(app){
 
     app.get("/api/notes", function(req, res) {
       console.log(store)
-      // res.send("Working")
       res.json(store);
     });
     
@@ -30,8 +30,7 @@ module.exports = function(app){
         console.log("completed");
         res.redirect("/notes")
       })
-      //  console.log(data)
-      //  res.send("Got it")
+      
     });
 
     app.delete("/api/notes", (req, res) => {
