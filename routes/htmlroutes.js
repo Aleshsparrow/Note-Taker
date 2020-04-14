@@ -1,7 +1,6 @@
 var path = require("path");
-// var express = require("express");
 
-// var app = express();
+// Seeting up and exporting html routes
 module.exports = function(app){
 
   app.get("/", function(req, res) {
