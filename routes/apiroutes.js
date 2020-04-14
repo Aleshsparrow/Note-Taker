@@ -7,7 +7,7 @@ var largestID = 0;
 
 // Setting up different routes and exporting
 module.exports = function(app){
-  // Get route
+  // Get route to get the saved notes
     app.get("/api/notes", function(req, res) {
       console.log(store)
       res.json(store);
